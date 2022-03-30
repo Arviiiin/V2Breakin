@@ -491,7 +491,7 @@ Bat.MouseButton1Down:connect(function()
 end)
 
 
-MedKit:connect(function()
+MedKit.MouseButton1Down:connect(function()
 	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("MedKit")
 end)
 
@@ -599,12 +599,4 @@ end)
 
 Lollipop.MouseButton1Down:connect(function()
 	game.ReplicatedStorage.RemoteEvents.GiveTool:FireServer("Lollipop")
-end)
-
-Owner.MouseButton1Down:connect(function()
-	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Owner is", Text = "Made By !Ar#7876."})
-end)
-
-Discord.MouseButton1Down:connect(function()
-	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Discord", Text = "Coming Soon."})
 end)
